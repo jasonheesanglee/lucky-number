@@ -1,15 +1,9 @@
 import random as rd
 
-counter = 6
-lotto = []
+def get_lucky_nums():
+  return rd.sample(range(1, 45+1), k=6)
 
-for i in range(6):
-  selected_number = rd.randint(1, 45+1)
-  lotto.append(selected_number)
-
-print(lotto)
-
-result = rd.sample(range(1, 45+1), k=6)
-print(result)
+if __name__ == '__main__':
+  print(get_lucky_nums())
 
 
